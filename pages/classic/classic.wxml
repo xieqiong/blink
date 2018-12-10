@@ -1,0 +1,4 @@
+<!--pages/classic/classic.wxml-->
+<view class="container">
+  <v-like></v-like>
+</view>

@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/classic/classic"
+  ],
+  "window": {
+    "navigationBarBackgroundColor":"#FFFFFF",
+    "navigationBarTitleText": "鲲鹏",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  }
+}
