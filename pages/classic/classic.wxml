@@ -1,4 +1,16 @@
 <!--pages/classic/classic.wxml-->
 <view class="container">
-  <v-like></v-like>
+  <image class="title-img" src="/images/title.png" />
+  <view class="title-continer">
+    <view class="first-title">NEW PROJECT</view>
+    <view class="sub-title">最新案例</view>
+    <view class="sub-line"></view>
+  </view>
+  <view class="sub-nav-container">
+    <navigator class="navi" url="/pages/classic/classic" hover-class="navigator-hover">最新</navigator>
+    <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">视频</navigator>
+    <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">平面</navigator>
+    <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">原画</navigator>
+  </view>
+  <image class="content-img" src="/images/content.png" />
 </view>

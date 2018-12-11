@@ -4,8 +4,33 @@
   ],
   "window": {
     "navigationBarBackgroundColor":"#FFFFFF",
-    "navigationBarTitleText": "鲲鹏",
+    "navigationBarTitleText": "鲲域",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [{
+        "pagePath": "pages/classic/classic",
+        "iconPath": "images/anli-icon.png",
+        "selectedIconPath": "images/anli-icon.png",
+        "text": "案例"
+      },
+      {
+        "pagePath": "pages/classic/classic",
+        "iconPath": "images/about-icon.png",
+        "selectedIconPath": "images/about-icon.png",
+        "text": "关于"
+      },
+      {
+        "pagePath": "pages/classic/classic",
+        "iconPath": "images/join-icon.png",
+        "selectedIconPath": "images/join-icon.png",
+        "text": "加入"
+      }
+    ]
   }
 }
