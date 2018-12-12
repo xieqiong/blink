@@ -12,5 +12,11 @@
     <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">平面</navigator>
     <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">原画</navigator>
   </view>
-  <image class="content-img" src="/images/content.png" />
+  <view class="content-case" wx:for="{{casees}}" wx:for-item="info" wx:key="id">
+    <view>
+      <image class="content-item-img" src="{{info.bg_images}}"/>
+      <view class="content-item-title">{{info.title}}</view>
+      <view class="content-item-title-sub">{{info.inputtime}}</view>
+    </view>
+  </view>
 </view>
