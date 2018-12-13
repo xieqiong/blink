@@ -6,5 +6,77 @@
   <view class="about-description">
     为了避免用户在微信中使用小程序服务时，注意力被周围复杂环境干扰，小程序在设计时应该注意减少无关的设计元素对用户目标的干扰。
   </view>
-  <image class="bk" src="images/title-bk.png"/>
+  <view class="service-container">
+    <view class="service-title">OUR SERVICE</view>
+    <view class="service-title-sub">我们的服务</view>
+    <view class="service-title-line"></view>
+    <view class="about-item">
+     <image class="about-icon" src="images/about-icon-1.png"/>
+     <view class="about-icon-title">VIDEO DESIGN</view>
+     <view class="about-icon-title">视频设计</view>
+    </view>
+    <view class="about-item">
+     <image class="about-icon" src="images/about-icon-2.png"/>
+     <view class="about-icon-title">VISUAL DESIGN</view>
+     <view class="about-icon-title">视觉设计</view>
+    </view>
+    <view class="about-item">
+     <image class="about-icon" src="images/about-icon-3.png"/>
+     <view class="about-icon-title">OTHERS DESIGN</view>
+     <view class="about-icon-title">其他设计</view>
+    </view>
+  </view>
+  <view class="customer-container">
+    <view class="service-title">OUR CUSTOMER</view>
+    <view class="service-title-sub">我们的客户</view>
+    <view class="service-title-line"></view>
+    <view class="customer-box">
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+      <view class="customer-box-item">
+        <image class="customer-box-item-img" src="images/customer-1.png"/>
+      </view>
+    </view>
+  </view>
+  <view class="service-container">
+    <view class="service-title">TIME</view>
+    <view class="service-title-sub">我们的团队</view>
+    <view class="service-title-line"></view>
+    <image class="team-iamge" src="images/team-1.png"/>
+    <view class="about-description">描述自己团队</view>
+    <view>
+      <button type="warn">加入我们</button>
+    </view>
+  </view>
+  <view class="customer-container">
+    <view class="service-title">CONTANCT US</view>
+    <view class="service-title-sub">联系我们</view>
+    <image class="team-iamge" src="images/address-1.png"/>
+  </view>
 </view>
+
