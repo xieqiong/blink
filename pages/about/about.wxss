@@ -1,0 +1,24 @@
+/* pages/about/about.wxss */
+.container{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-header{
+  width: 100%;
+  height: 420rpx;
+}
+.image-header image{
+  width: 100%;
+  height: 420rpx;
+}
+.about-description{
+  line-height: 30px;
+  font-size: 12pt;
+  padding: 70rpx 60rpx;
+}
+.bk{
+  width: 100%;
+  height: 4400rpx;
+}

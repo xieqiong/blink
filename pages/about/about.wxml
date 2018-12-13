@@ -1,0 +1,10 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="image-header">
+    <image src="images/title-head.png"/>
+  </view>
+  <view class="about-description">
+    为了避免用户在微信中使用小程序服务时，注意力被周围复杂环境干扰，小程序在设计时应该注意减少无关的设计元素对用户目标的干扰。
+  </view>
+  <image class="bk" src="images/title-bk.png"/>
+</view>

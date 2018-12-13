@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/classic/classic"
+    "pages/classic/classic",
+    "pages/about/about",
+    "pages/join/join"
   ],
   "window": {
-    "navigationBarBackgroundColor":"#FFFFFF",
+    "navigationBarBackgroundColor": "#FFFFFF",
     "navigationBarTitleText": "鲲域",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
@@ -13,20 +15,21 @@
     "selectedColor": "red",
     "borderStyle": "white",
     "backgroundColor": "#fff",
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/classic/classic",
         "iconPath": "images/anli-icon.png",
         "selectedIconPath": "images/anli-icon.png",
         "text": "案例"
       },
       {
-        "pagePath": "pages/classic/classic",
+        "pagePath": "pages/about/about",
         "iconPath": "images/about-icon.png",
         "selectedIconPath": "images/about-icon.png",
         "text": "关于"
       },
       {
-        "pagePath": "pages/classic/classic",
+        "pagePath": "pages/join/join",
         "iconPath": "images/join-icon.png",
         "selectedIconPath": "images/join-icon.png",
         "text": "加入"

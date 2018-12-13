@@ -1,0 +1,14 @@
+<!--pages/join/join.wxml-->
+<view class="container">
+  <view class="container-join-tbox">
+    <view class="join-enlish">JOIN US</view>
+    <view class="join-chinese">加入我们</view>
+    <view class="join-line"></view>
+    <view class="join-summary">
+      <view>这里需要几句走心的文字</view>
+      <view>比如阿斯蒂芬是师傅的萨达胜多负少发发</view>
+      <view>比如阿斯蒂芬是师傅的萨</view>
+      <view>比如阿斯蒂芬是师傅的萨达胜顿发</view>
+    </view>
+  </view>
+</view>
