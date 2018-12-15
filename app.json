@@ -19,19 +19,19 @@
       {
         "pagePath": "pages/classic/classic",
         "iconPath": "images/anli-icon.png",
-        "selectedIconPath": "images/anli-icon.png",
+        "selectedIconPath": "images/anli-active_32px.png",
         "text": "案例"
       },
       {
         "pagePath": "pages/about/about",
         "iconPath": "images/about-icon.png",
-        "selectedIconPath": "images/about-icon.png",
+        "selectedIconPath": "images/about-active_32px.png",
         "text": "关于"
       },
       {
         "pagePath": "pages/join/join",
         "iconPath": "images/join-icon.png",
-        "selectedIconPath": "images/join-icon.png",
+        "selectedIconPath": "images/join-active_32px.png",
         "text": "加入"
       }
     ]
