@@ -7,7 +7,8 @@ Page({
   data: {
     // dingyi anli
     initCases: [],
-    casees: []
+    casees: [],
+    tabActive: '1',
   },
 
   btnVideoclick: function () {
@@ -16,8 +17,7 @@ Page({
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
-        this.setData({ casees: result });
-        console.log(result)
+        this.setData({ casees: result, tabActive: '1' });
       }
     })
   },
@@ -28,7 +28,7 @@ Page({
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
-        this.setData({ casees: result });
+        this.setData({ casees: result, tabActive: '2' });
         console.log(result)
       }
     })
@@ -40,8 +40,7 @@ Page({
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
-        this.setData({ casees: result });
-        console.log(result)
+        this.setData({ casees: result, tabActive: '3'});
       }
     })
   },
@@ -51,8 +50,7 @@ Page({
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
-        this.setData({ casees: result });
-        console.log(result)
+        this.setData({ casees: result, tabActive: '4' });
       }
     })
   },

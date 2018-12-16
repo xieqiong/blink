@@ -83,5 +83,5 @@
   font-size: 18px;
 }
 .navi-active{
-  color: 
+  color: #ED5050;
 }

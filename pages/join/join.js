@@ -10,24 +10,10 @@ Page({
   },
 
   data: {
-    list: [
-      {
-        id: 'view',
-        name: '视频包装设计师',
-        open: false,
-        pages: ['职位职责：', '1、负责汽车类短视频文案创作编写、车展等线下项目活动方案的策划工作，提供创意；', '2、搜集整理汽车市场最新动态、热点新闻；', '3、协助团队视频拍摄及后期成片效果审核；', '4、配合负责人及其他策划人员，提供节目整体创意及优化方案；', '5、完成上级领导人员安排的其他工作。', '职位要求：', '1、具备创意思维，擅长调侃与铺梗，可以按照节目需求灵活调整文案风格','2、具备一定的汽车行业相关知识。有汽车类自媒体工作经验者优先']
-      }, {
-        id: 'content',
-        name: '视频剪辑设计师',
-        open: false,
-        pages: ['职位职责：', '1、负责汽车类短视频文案创作编写、车展等线下项目活动方案的策划工作，提供创意；', '2、搜集整理汽车市场最新动态、热点新闻；', '3、协助团队视频拍摄及后期成片效果审核；', '4、配合负责人及其他策划人员，提供节目整体创意及优化方案；', '5、完成上级领导人员安排的其他工作。', '职位要求：', '1、具备创意思维，擅长调侃与铺梗，可以按照节目需求灵活调整文案风格', '2、具备一定的汽车行业相关知识。有汽车类自媒体工作经验者优先']
-      }, {
-        id: 'form',
-        name: '视频包装设计师',
-        open: false,
-        pages: ['职位职责：', '1、负责汽车类短视频文案创作编写、车展等线下项目活动方案的策划工作，提供创意；', '2、搜集整理汽车市场最新动态、热点新闻；', '3、协助团队视频拍摄及后期成片效果审核；', '4、配合负责人及其他策划人员，提供节目整体创意及优化方案；', '5、完成上级领导人员安排的其他工作。', '职位要求：', '1、具备创意思维，擅长调侃与铺梗，可以按照节目需求灵活调整文案风格', '2、具备一定的汽车行业相关知识。有汽车类自媒体工作经验者优先']
-      }
-    ]
+    list: [],
+    planeList: [],
+    publicList: [],
+    joyList: []
   },
 
   kindToggle(e) {
@@ -44,5 +30,59 @@ Page({
       list
     })
     wx.reportAnalytics('click_view_programmatically', {})
-  }
+  },
+  onLoad: function (options) {
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=14&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        // this.initCases = result;
+        for(let i = 0; i<result.length; i++) {
+          result[i].open = false
+          result[i].content = result[i].data[0].content
+        }
+        this.setData({ list: result });
+        console.log(result)
+      }
+    })
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        // this.initCases = result;
+        for (let i = 0; i < result.length; i++) {
+          result[i].open = false
+          result[i].content = result[i].data[0].content
+        }
+        this.setData({ planeList: result });
+        console.log(result)
+      }
+    })
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        // this.initCases = result;
+        for (let i = 0; i < result.length; i++) {
+          result[i].open = false
+          result[i].content = result[i].data[0].content
+        }
+        this.setData({ publicList: result });
+        console.log(result)
+      }
+    })
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        // this.initCases = result;
+        for (let i = 0; i < result.length; i++) {
+          result[i].open = false
+          result[i].content = result[i].data[0].content
+        }
+        this.setData({ joyList: result });
+        console.log(result)
+      }
+    })
+  },
 })
