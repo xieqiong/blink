@@ -1,3 +1,4 @@
+
 <!--pages/classic/classic.wxml-->
 <view class="container">
   <image class="title-img" src="/images/title.png" />
