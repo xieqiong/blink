@@ -1,7 +1,9 @@
 
 <!--pages/classic/classic.wxml-->
 <view class="container">
-  <image class="title-img" src="/images/title.png" />
+  <view class="title-box">
+  <image class="title-img" src="/images/logo.png" />
+  </view>
   <view class="title-continer">
     <view class="first-title">NEW PROJECT</view>
     <view class="sub-title">最新案例</view>

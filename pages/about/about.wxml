@@ -4,7 +4,7 @@
     <image src="images/title-head.png"/>
   </view>
   <view class="about-description">
-    为了避免用户在微信中使用小程序服务时，注意力被周围复杂环境干扰，小程序在设计时应该注意减少无关的设计元素对用户目标的干扰。
+    鲲域，是一家有想法、有态度，致力于为客户提供全方位互联网数字创意作品的独立工作室。核心成员均为来自腾讯和网易等知名公司的资深游戏人,曾为《斗战神》、《大话西游2》、《星辰变》《火影忍者》等游戏制作了一批颇具口碑的精彩作品。我们不仅精通游戏品牌的营销传播，更能以专业和灵动的创作思维，根据客户的需求提供高质量数字创意作品。
   </view>
   <view class="service-container">
     <view class="service-title">OUR SERVICE</view>
@@ -35,31 +35,31 @@
         <image class="customer-box-item-img" src="images/customer-1.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-2.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-3.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-3.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-4.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-5.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-6.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-7.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-7.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image class="customer-box-item-img" src="images/customer-8.png"/>
       </view>
     </view>
   </view>
