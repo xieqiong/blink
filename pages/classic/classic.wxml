@@ -7,16 +7,21 @@
     <view class="sub-line"></view>
   </view>
   <view class="sub-nav-container">
-    <navigator class="navi" url="/pages/classic/classic" hover-class="navigator-hover">最新</navigator>
-    <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">视频</navigator>
-    <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">平面</navigator>
-    <navigator  class="navi" url="/pages/classic/classic" hover-class="navigator-hover">原画</navigator>
+    <view class="navi" bindtap="btnVideoclick"  hover-class="navigator-hover">视频</view>
+    <view class="navi" bindtap="btnPlaneclick" hover-class="navigator-hover">平面</view>
+    <view class="navi" bindtap="btnOriginclick" hover-class="navigator-hover">原画</view>
+     <view class="navi" bindtap="btnAllclick"  hover-class="navigator-hover">H5</view>
   </view>
   <view class="content-case" wx:for="{{casees}}" wx:for-item="info" wx:key="id">
-    <view>
+    <view class="content-case-item">
       <image class="content-item-img" src="{{info.bg_images}}"/>
-      <view class="content-item-title">{{info.title}}</view>
-      <view class="content-item-title-sub">{{info.inputtime}}</view>
+      <view class="content-left">
+       <view class="content-item-key">KEY VERSION</view>
+      </view>
+      <view class="content-right">
+        <view class="content-item-title">{{info.title}}</view>
+        <view class="content-item-title-sub">{{info.inputtime}} </view>
+      </view>
     </view>
   </view>
   <view>

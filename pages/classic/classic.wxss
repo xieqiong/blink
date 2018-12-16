@@ -10,13 +10,32 @@
   height: 300rpx;
   border-bottom: 1px solid #eee;
 }
+.content-case-item{
+  width: calc(100% - 120rpx);
+  display: block;
+  padding: 50rpx 60rpx;
+  overflow: hidden;
+}
 .content-case{
   width: 100%;
   height: 450rpx;
+  display: block;
 }
 .content-item-img{
   width: 100%;
   height: 350rpx;
+}
+.content-item-key{
+  font-size: 22px;
+  color: #999;
+  float: left;
+}
+.content-left{
+  display: inline-block
+}
+.content-right{
+  display: inline-block;
+  float: right;
 }
 .content-item-title{
   text-align: right;
@@ -61,4 +80,5 @@
 .navi{
   width: 25%;
   text-align: center;
+  font-size: 18px;
 }

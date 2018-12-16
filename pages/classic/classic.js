@@ -6,17 +6,65 @@ Page({
    */
   data: {
     // dingyi anli
+    initCases: [],
     casees: []
   },
 
+  btnVideoclick: function () {
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        this.initCases = result;
+        this.setData({ casees: result });
+        console.log(result)
+      }
+    })
+  },
+
+  btnPlaneclick: function () {
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoload&catid=11&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        this.initCases = result;
+        this.setData({ casees: result });
+        console.log(result)
+      }
+    })
+  },
+
+  btnOriginclick: function () {
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoload&catid=12&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        this.initCases = result;
+        this.setData({ casees: result });
+        console.log(result)
+      }
+    })
+  },
+  btnAllclick: function () {
+    wx.request({
+      url: 'http://www.k-media.cn/api.php?op=autoload&catid=13&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        this.initCases = result;
+        this.setData({ casees: result });
+        console.log(result)
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoload&catid=11&catty=3&page=1',
+      url: 'http://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
       success: (res)=>{
         let result = res.data.result;
+        this.initCases = result;
         this.setData({ casees: result});
         console.log(result)
       }
