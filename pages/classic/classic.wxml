@@ -15,7 +15,7 @@
   </view>
   <view class="content-case" wx:for="{{casees}}" wx:for-item="info" wx:key="id">
     <view class="content-case-item">
-      <image class="content-item-img" src="{{info.bg_images}}"/>
+      <image bindtap="btnCaseDetail" data-url="{{info.url}}" class="content-item-img" src="{{info.bg_images}}"/>
       <view class="content-left">
        <view class="content-item-key">KEY VERSION</view>
       </view>

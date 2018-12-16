@@ -78,5 +78,26 @@
     <view class="service-title-sub">联系我们</view>
     <image class="team-iamge" src="images/address-1.png"/>
   </view>
+  <view class="contract-container">
+    <view class="contract-title">联系我们</view>
+    <view class="contract-line"></view>
+    <view class="contract-content">深圳市南山区科苑路15号科兴科学园B2-1005</view>
+    <view class="contract-content">0755-22677158</view>
+    <view class="contarct-block">
+      <view class="contract-left">
+        <view>商务合作</view>
+        <view class="contract-line"></view>
+        <view class="contract-content-1">k@k-media.cn</view>
+        <view class="contract-content-1">13601230123</view>
+        <view class="contract-content-1">杨女士</view>
+      </view>
+      <view class="contract-right">
+        <view>加入我们</view>
+        <view class="contract-line-1"></view>
+        <view class="contract-content-1">hr@k-media.cn</view>
+        <view class="message-cont" bindtap="btnclick">查看招聘信息</view>
+      </view>
+    </view>
+  </view>
 </view>
 

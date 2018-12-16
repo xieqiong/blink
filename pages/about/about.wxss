@@ -26,7 +26,7 @@
   width:100%;
   background: rgb(240,240,240);
   min-height: 200rpx;
-  padding: 80rpx 40rpx;
+  padding: 80rpx 0;
   display: flex;
   flex-direction: column;
   align-items: center
@@ -34,7 +34,7 @@
 .customer-container{
   width:100%;
   min-height: 200rpx;
-  padding: 80rpx 40rpx;
+  padding: 80rpx 0;
   display: flex;
   flex-direction: column;
   align-items: center
@@ -87,4 +87,62 @@
   padding: 40rpx 60rpx;
   width: 100%;
   height: 600rpx;
+}
+.contract-container{
+  width:100%;
+  min-height: 200rpx;
+  padding: 40rpx 0;
+  display: block;
+}
+.contract-line{
+  width: 60rpx;
+  height: 20rpx;
+  border-bottom: 2px solid #ddd;
+  margin-left: 40rpx;
+  margin-bottom: 20rpx;
+}
+.contract-line-1{
+  width: 60rpx;
+  height: 20rpx;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20rpx;
+}
+.contract-title{
+  font-size: 16px;
+  color: #666;
+  padding-left:40rpx;
+}
+.contract-content{
+  padding-left:40rpx;
+  font-size: 14px;
+  color: #666;
+  line-height: 50rpx;
+}
+.contract-content-1{
+  font-size: 14px;
+  color: #666;
+  line-height: 50rpx;
+}
+.contarct-block{
+  padding-top: 40rpx;
+  padding-left:40rpx;
+}
+.contract-left{
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+   font-size: 16px;
+  color: #666;
+}
+.contract-right{
+  vertical-align: top;
+  display: inline-block;
+  width: 49%;
+  font-size: 16px;
+  color: #666;
+}
+.message-cont{
+  color: #ED5050;
+  margin-top: 20rpx;
+  font-size: 16px;
 }

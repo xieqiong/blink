@@ -2,7 +2,8 @@
   "pages": [
     "pages/classic/classic",
     "pages/about/about",
-    "pages/join/join"
+    "pages/join/join",
+    "pages/case/case"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",

@@ -12,7 +12,7 @@
     </view>
   </view>
   <view class="index">
-    <view class="index-bd">
+     <view class="index-bd">
       <view class="index-block-tile">视频类.</view>
       <view class="kind-list">
         <block wx:for-items="{{list}}" wx:key="{{item.id}}">
@@ -29,43 +29,13 @@
           </view>
         </block>
       </view>
+    </view>
+     <view class="index-bd">
       <view class="index-block-tile">平面类.</view>
       <view class="kind-list">
         <block wx:for-items="{{planeList}}" wx:key="{{item.id}}">
           <view class="kind-list-item">
-            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
-              <view class="kind-list-text">{{item.title}}</view>
-              <image class="kind-list-img" src="images/plus.png"></image>
-            </view>
-            <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
-              <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
-                <rich-text  class="navicate-text" nodes="{{item.content}}"></rich-text>  
-              </view>
-            </view>
-          </view>
-        </block>
-      </view>
-      <view class="index-block-tile">公共类.</view>
-      <view class="kind-list">
-        <block wx:for-items="{{publicList}}" wx:key="{{item.id}}">
-          <view class="kind-list-item">
-            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
-              <view class="kind-list-text">{{item.title}}</view>
-              <image class="kind-list-img" src="images/plus.png"></image>
-            </view>
-            <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
-              <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
-                <rich-text  class="navicate-text" nodes="{{item.content}}"></rich-text>  
-              </view>
-            </view>
-          </view>
-        </block>
-      </view>
-      <view class="index-block-tile">互动娱乐类.</view>
-      <view class="kind-list">
-        <block wx:for-items="{{joyList}}" wx:key="{{item.id}}">
-          <view class="kind-list-item">
-            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
+            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindPlaneListToggle">
               <view class="kind-list-text">{{item.title}}</view>
               <image class="kind-list-img" src="images/plus.png"></image>
             </view>
@@ -78,5 +48,46 @@
         </block>
       </view>
     </view>
+    <view class="index-bd">
+      <view class="index-block-tile">公共类.</view>
+      <view class="kind-list">
+        <block wx:for-items="{{publicList}}" wx:key="{{item.id}}">
+          <view class="kind-list-item">
+            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindPublicListToggle">
+              <view class="kind-list-text">{{item.title}}</view>
+              <image class="kind-list-img" src="images/plus.png"></image>
+            </view>
+            <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+              <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+                <rich-text  class="navicate-text" nodes="{{item.content}}"></rich-text>  
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="index-bd">
+      <view class="index-block-tile">互动娱乐类.</view>
+      <view class="kind-list">
+        <block wx:for-items="{{joyList}}" wx:key="{{item.id}}">
+          <view class="kind-list-item">
+            <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindJoyListToggle">
+              <view class="kind-list-text">{{item.title}}</view>
+              <image class="kind-list-img" src="images/plus.png"></image>
+            </view>
+            <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
+              <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
+                <rich-text  class="navicate-text" nodes="{{item.content}}"></rich-text>  
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class="container2-join-tbox">
+    <view class="join-chinese1">感兴趣吗?</view>
+    <view class="join-chinese1">请将应聘职位及简历作品发送至：</view>
+    <view class="join-enlish1">HR@K-MEDIA.CN</view>
   </view>
 </view>

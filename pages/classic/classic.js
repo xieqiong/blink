@@ -54,6 +54,16 @@ Page({
       }
     })
   },
+  btnCaseDetail: function (event) {
+    // console.log(event)
+    let url = event.target.dataset.url;
+    let suburl = url.substr(url.indexOf("catid="), url.length);
+    let catid = suburl.substr(6, suburl.indexOf("=")-3);
+    let id = suburl.substr(suburl.lastIndexOf("=")+1, suburl.length);
+    wx.navigateTo({
+      url: '/pages/case/case?carid=' + catid + '&id=' +id,
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
@@ -64,7 +74,7 @@ Page({
         let result = res.data.result;
         this.initCases = result;
         this.setData({ casees: result});
-        console.log(result)
+        // console.log(result)
       }
     })
   },
