@@ -105,7 +105,7 @@ Page({
   },
   onLoad: function (options) {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=14&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoloadinfo&catid=14&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         // this.initCases = result;
@@ -117,7 +117,7 @@ Page({
       }
     })
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         for (let i = 0; i < result.length; i++) {
@@ -129,7 +129,7 @@ Page({
       }
     })
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         // this.initCases = result;
@@ -142,7 +142,7 @@ Page({
       }
     })
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoloadinfo&catid=15&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         // this.initCases = result;

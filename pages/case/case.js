@@ -12,7 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let url = "http://www.k-media.cn/index.php?m=content&c=index&a=show&catid="
+    let url = "https://www.k-media.cn/index.php?m=content&c=index&a=show&catid="
     url = url + options.carid + "&id="+ options.id+"&showFlag=1"
     console.log(url)
     this.setData({ url: url });

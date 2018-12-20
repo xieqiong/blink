@@ -13,7 +13,7 @@ Page({
 
   btnVideoclick: function () {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
@@ -24,7 +24,7 @@ Page({
 
   btnPlaneclick: function () {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoload&catid=11&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoload&catid=11&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
@@ -36,7 +36,7 @@ Page({
 
   btnOriginclick: function () {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoload&catid=12&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoload&catid=12&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
@@ -46,7 +46,7 @@ Page({
   },
   btnAllclick: function () {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoload&catid=13&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoload&catid=13&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         this.initCases = result;
@@ -69,7 +69,7 @@ Page({
    */
   onLoad: function (options) {
     wx.request({
-      url: 'http://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
       success: (res)=>{
         let result = res.data.result;
         this.initCases = result;

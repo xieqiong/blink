@@ -2,7 +2,7 @@
 <!--pages/classic/classic.wxml-->
 <view class="container">
   <view class="title-box">
-  <image class="title-img" src="/images/logo.png" />
+    <image class="title-img" src="/images/logo.png" />
   </view>
   <view class="title-continer">
     <view class="first-title">NEW PROJECT</view>
@@ -26,7 +26,5 @@
         <view class="content-item-title-sub">{{info.inputtime}} </view>
       </view>
     </view>
-  </view>
-  <view>
   </view>
 </view>

@@ -84,7 +84,7 @@
 .sub-nav-container{
   display: flex;
   width:100%;
-  padding: 0 5rpx 10rpx 5rpx;
+  padding: 0 0 10rpx 0;
 }
 .navi{
   width: 25%;
