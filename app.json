@@ -3,7 +3,8 @@
     "pages/classic/classic",
     "pages/about/about",
     "pages/join/join",
-    "pages/case/case"
+    "pages/case/case",
+    "pages/index/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#FFFFFF",
@@ -19,6 +20,12 @@
     "list": [
       {
         "pagePath": "pages/classic/classic",
+        "iconPath": "images/index.png",
+        "selectedIconPath": "images/index-active.png",
+        "text": "案例"
+      },
+      {
+        "pagePath": "pages/index/index",
         "iconPath": "images/anli-icon.png",
         "selectedIconPath": "images/anli-active_32px.png",
         "text": "案例"

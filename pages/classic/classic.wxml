@@ -1,30 +1,24 @@
-
 <!--pages/classic/classic.wxml-->
 <view class="container">
   <view class="title-box">
     <image class="title-img" src="/images/logo.png" />
   </view>
   <view class="title-continer">
-    <view class="first-title">NEW PROJECT</view>
-    <view class="sub-title">最新案例</view>
-    <view class="sub-line"></view>
+    <view class="first-title">NEW VIDEO PROJECT</view>
+    <view class="sub-title">最新视频案例</view>
   </view>
-  <view class="sub-nav-container">
-    <view  class="navi {{tabActive=='1'? 'navi-active' : ''}}" bindtap="btnVideoclick">视频</view>
-    <view class="navi {{tabActive=='2'? 'navi-active' : ''}}" bindtap="btnPlaneclick" >平面</view>
-    <view class="navi {{tabActive=='3'? 'navi-active' : ''}}" bindtap="btnOriginclick" >原画</view>
-     <view class="navi {{tabActive=='4'? 'navi-active' : ''}}" bindtap="btnAllclick" >H5</view>
-  </view>
-  <view class="content-case" wx:for="{{casees}}" wx:for-item="info" wx:key="id">
-    <view class="content-case-item">
-      <image bindtap="btnCaseDetail" data-url="{{info.url}}" class="content-item-img" src="{{info.bg_images}}"/>
-      <view class="content-left">
-       <view class="content-item-key">KEY VERSION</view>
-      </view>
-      <view class="content-right">
+  <view class="case-container">
+    <view class="content-case" wx:for="{{casees}}" wx:for-item="info" wx:key="id">
+      <view class="content-case-item">
+        <image bindtap="btnCaseDetail" data-url="{{info.url}}" class="content-item-img" src="{{info.bg_images}}" />
         <view class="content-item-title">{{info.title}}</view>
-        <view class="content-item-title-sub">{{info.inputtime}} </view>
+        <view class="content-item-title-sub">PROMOTION VIDEO </view>
       </view>
     </view>
   </view>
+   <view class="btn-view">
+      <button class='btn' bindtap="btnclick">
+        <text class="btn-inner">VIEW MORE \n 查看更多</text>
+      </button>
+    </view>
 </view>

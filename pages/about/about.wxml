@@ -68,8 +68,8 @@
     </view>
   </view>
   <view class="service-container">
-    <view class="service-title">TIME</view>
-    <view class="service-title-sub">我们的团队</view>
+    <view class="service-title">TEME</view>
+    <view class="service-title-sub">团队</view>
     <view class="service-title-line"></view>
     <image class="team-iamge" src="images/team-1.png"/>
     <view class="about-description">
@@ -93,7 +93,7 @@
     <view class="contarct-block">
       <view class="contract-left">
         <view>商务合作</view>
-        <view class="contract-line"></view>
+        <view class="contract-line-1"></view>
         <view class="contract-content-1">yangjie@k-media.cn</view>
         <view class="contract-content-1">0755-22677158</view>
       

@@ -11,57 +11,9 @@ Page({
     tabActive: '1',
   },
 
-  btnVideoclick: function () {
-    wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
-      success: (res) => {
-        let result = res.data.result;
-        this.initCases = result;
-        this.setData({ casees: result, tabActive: '1' });
-      }
-    })
-  },
-
-  btnPlaneclick: function () {
-    wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoload&catid=11&catty=3&page=1',
-      success: (res) => {
-        let result = res.data.result;
-        this.initCases = result;
-        this.setData({ casees: result, tabActive: '2' });
-        // console.log(result)
-      }
-    })
-  },
-
-  btnOriginclick: function () {
-    wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoload&catid=12&catty=3&page=1',
-      success: (res) => {
-        let result = res.data.result;
-        this.initCases = result;
-        this.setData({ casees: result, tabActive: '3'});
-      }
-    })
-  },
-  btnAllclick: function () {
-    wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoload&catid=13&catty=3&page=1',
-      success: (res) => {
-        let result = res.data.result;
-        this.initCases = result;
-        this.setData({ casees: result, tabActive: '4' });
-      }
-    })
-  },
-  btnCaseDetail: function (event) {
-    // console.log(event)
-    let url = event.target.dataset.url;
-    let suburl = url.substr(url.indexOf("catid="), url.length);
-    let catid = suburl.substr(6, suburl.indexOf("=")-3);
-    let id = suburl.substr(suburl.lastIndexOf("=")+1, suburl.length);
-    wx.navigateTo({
-      url: '/pages/case/case?carid=' + catid + '&id=' +id,
+  btnclick: function () {
+    wx.switchTab({    //跳转到tabBar页面，并关闭其他所有tabBar页面
+      url: "/pages/index/index"
     })
   },
   /**
