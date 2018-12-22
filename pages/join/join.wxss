@@ -68,7 +68,7 @@
   padding: 30rpx 40rpx;
 }
 .index-block-tile{
-  color:#666;
+  color:#333;
   font-size: 18px;
 }
 .index-ft {
@@ -144,7 +144,7 @@
   background-color: #FFFFFF;
   border-radius: 4rpx;
   overflow: hidden;
-  color: #666;
+  color: #333;
   border-bottom: 1px solid #f1f2f3;
 }
 .kind-list-item:first-child {

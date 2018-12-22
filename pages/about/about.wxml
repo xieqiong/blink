@@ -1,15 +1,25 @@
 <!--pages/about/about.wxml-->
 <view class="container">
   <view class="image-header">
-    <image src="images/title-head.png"/>
+    <image class="image-header-title" src="images/title-head.png"/>
   </view>
   <view class="about-description">
-    鲲域，是一家有想法、有态度，致力于为客户提供全方位互联网数字创意作品的独立工作室。核心成员均为来自腾讯和网易等知名公司的资深游戏人,曾为《斗战神》、《大话西游2》、《星辰变》《火影忍者》等游戏制作了一批颇具口碑的精彩作品。我们不仅精通游戏品牌的营销传播，更能以专业和灵动的创作思维，根据客户的需求提供高质量数字创意作品。
+  我们经常自问：如果我们自己是一家互联网公司，为什么需要鲲域这样的合作伙伴？
+  视觉炸裂？专业服务？强悍执行？牛逼创意？
+  这些回答都不错，但我们希望做到更多。
+  最终，大家被如下愿景所打动——
+让每位客户“彻底省心”，交付品质“超越期待”。
+鲲域的主要成员，全部来自腾讯、网易等知名公司。
+曾长期浸淫第一线的产品研发、运营与市场营销，既深刻理解发行诉求，也广泛洞悉用户痛点。
+公司成立以来，已有幸服务了中国手游TOP50中超过30%的产品，帮助并见证了无数辉煌的数字与苦尽甘来的时刻。
+而真正让我们感动的，是合作伙伴一以贯之的信任，以及用户对好产品发自内心的认可。
+我们是鲲域，致力于成为中国最好的互联网数字创意产品提供商。
   </view>
   <view class="service-container">
     <view class="service-title">OUR SERVICE</view>
     <view class="service-title-sub">我们的服务</view>
     <view class="service-title-line"></view>
+    <view class="service-detail">产品宣传视频,LOGO演绎动画,发布会视频,海报,官网,宣传物料,H5设计,UI设计,品牌包装</view>
     <view class="about-item">
      <image class="about-icon" src="images/about-icon-1.png"/>
      <view class="about-icon-title">VIDEO DESIGN</view>
@@ -41,9 +51,6 @@
         <image class="customer-box-item-img" src="images/customer-3.png"/>
       </view>
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-3.png"/>
-      </view>
-      <view class="customer-box-item">
         <image class="customer-box-item-img" src="images/customer-4.png"/>
       </view>
       <view class="customer-box-item">
@@ -51,9 +58,6 @@
       </view>
       <view class="customer-box-item">
         <image class="customer-box-item-img" src="images/customer-6.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-7.png"/>
       </view>
       <view class="customer-box-item">
         <image class="customer-box-item-img" src="images/customer-7.png"/>
@@ -68,9 +72,12 @@
     <view class="service-title-sub">我们的团队</view>
     <view class="service-title-line"></view>
     <image class="team-iamge" src="images/team-1.png"/>
-    <view class="about-description">描述自己团队</view>
+    <view class="about-description">
+      <view>放肆生活玩命浪</view>
+      <view>努力工作拼命花</view>
+    </view>
     <view>
-      <button type="warn">加入我们</button>
+      <button class='btn' bindtap="btnclick">加入我们</button>
     </view>
   </view>
   <view class="customer-container">
@@ -87,14 +94,14 @@
       <view class="contract-left">
         <view>商务合作</view>
         <view class="contract-line"></view>
-        <view class="contract-content-1">k@k-media.cn</view>
-        <view class="contract-content-1">13601230123</view>
-        <view class="contract-content-1">杨女士</view>
+        <view class="contract-content-1">yangjie@k-media.cn</view>
+        <view class="contract-content-1">0755-22677158</view>
+      
       </view>
       <view class="contract-right">
         <view>加入我们</view>
         <view class="contract-line-1"></view>
-        <view class="contract-content-1">hr@k-media.cn</view>
+        <view class="contract-content-1">yangjie@k-media.cn</view>
         <view class="message-cont" bindtap="btnclick">查看招聘信息</view>
       </view>
     </view>

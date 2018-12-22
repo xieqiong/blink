@@ -29,7 +29,7 @@ Page({
         let result = res.data.result;
         this.initCases = result;
         this.setData({ casees: result, tabActive: '2' });
-        console.log(result)
+        // console.log(result)
       }
     })
   },
