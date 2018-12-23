@@ -44,34 +44,12 @@
       <view class="customer-box-item">
         <image class="customer-box-item-img" src="images/customer-1.png"/>
       </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-2.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-3.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-4.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-5.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-6.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-7.png"/>
-      </view>
-      <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-8.png"/>
-      </view>
     </view>
   </view>
   <view class="service-container">
     <view class="service-title">TEME</view>
     <view class="service-title-sub">团队</view>
-    <view class="service-title-line"></view>
-    <image class="team-iamge" src="images/team-1.png"/>
+    <image class="team-iamge-1" src="images/team-1.png"/>
     <view class="about-description">
       <view>放肆生活玩命浪</view>
       <view>努力工作拼命花</view>

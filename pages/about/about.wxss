@@ -22,7 +22,7 @@
 .about-description{
   line-height: 30px;
   font-size: 12pt;
-  padding: 70rpx 60rpx;
+  padding: 40rpx 60rpx;
   color:#333;
 }
 .bk{
@@ -98,19 +98,25 @@
   border-radius: 0;
 }
 .customer-box-item{
-  width: 33%;
-  height: 100rpx;
+  width: 100%;
+  height: 490rpx;
 }
 .customer-box-item-img{
   width: calc(100% - 80rpx);
   margin-left: 40rpx;
-  height: 80rpx;
-  margin-top:60rpx;
+  height: 380rpx;
+  margin-top:30rpx;
+  overflow: hidden;
 }
 .team-iamge{
-  padding: 40rpx 0;
+  padding: 40rpx 0 0 0;
   width: 100%;
-  height: 600rpx;
+  height: 500rpx;
+}
+.team-iamge-1{
+  padding: 40rpx 30rpx 0 30rpx;
+  width: calc(100% -60rpx);
+  height: 550rpx;
 }
 .contract-container{
   width:100%;
