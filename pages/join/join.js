@@ -40,12 +40,19 @@ Page({
   },
 
   kindToggle(e) {
-    this.setListFalse()
     const id = e.currentTarget.id
     let list = this.data.list
+    let status = false
     for (let i = 0, len = list.length; i < len; ++i) {
       if (list[i].id === id) {
-        list[i].open = !list[i].open
+        status = list[i].open
+        break
+      } 
+    }
+    this.setListFalse()
+    for (let i = 0, len = list.length; i < len; ++i) {
+      if (list[i].id === id) {
+        list[i].open = !status
       } else {
         list[i].open = false
       }
@@ -56,12 +63,20 @@ Page({
     wx.reportAnalytics('click_view_programmatically', {})
   },
   kindPlaneListToggle(e) {
-    this.setListFalse()
     const id = e.currentTarget.id
     let planeList = this.data.planeList
+    let status = false
     for (let i = 0, len = planeList.length; i < len; ++i) {
       if (planeList[i].id === id) {
-        planeList[i].open = !planeList[i].open
+        status = planeList[i].open
+      } else {
+        planeList[i].open = false
+      }
+    }
+    this.setListFalse()
+    for (let i = 0, len = planeList.length; i < len; ++i) {
+      if (planeList[i].id === id) {
+        planeList[i].open = !status
       } else {
         planeList[i].open = false
       }
@@ -72,12 +87,20 @@ Page({
     wx.reportAnalytics('click_view_programmatically', {})
   },
   kindPublicListToggle(e) {
-    this.setListFalse()
     const id = e.currentTarget.id
     let publicList = this.data.publicList
+    let status = false
     for (let i = 0, len = publicList.length; i < len; ++i) {
       if (publicList[i].id === id) {
-        publicList[i].open = !publicList[i].open
+        status= publicList[i].open
+      } else {
+        publicList[i].open = false
+      }
+    }
+    this.setListFalse()
+    for (let i = 0, len = publicList.length; i < len; ++i) {
+      if (publicList[i].id === id) {
+        publicList[i].open = !status
       } else {
         publicList[i].open = false
       }
@@ -88,12 +111,20 @@ Page({
     wx.reportAnalytics('click_view_programmatically', {})
   },
   kindJoyListToggle(e) {
-    this.setListFalse()
     const id = e.currentTarget.id
     let joyList = this.data.joyList
+    let status = false
     for (let i = 0, len = joyList.length; i < len; ++i) {
       if (joyList[i].id === id) {
-        joyList[i].open = !joyList[i].open
+        status = joyList[i].open
+      } else {
+        joyList[i].open = false
+      }
+    }
+    this.setListFalse()
+    for (let i = 0, len = joyList.length; i < len; ++i) {
+      if (joyList[i].id === id) {
+        joyList[i].open = !status
       } else {
         joyList[i].open = false
       }

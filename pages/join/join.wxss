@@ -6,7 +6,7 @@
 }
 .container-join-tbox{
   width:100%;
-  height: 600rpx;
+  height: 480rpx;
   background: #f0f0f0;
   text-align: center;
   display: flex;

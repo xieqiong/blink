@@ -10,6 +10,16 @@ Page({
     casees: [],
     tabActive: '1',
   },
+  btnCaseDetail: function (event) {
+    // console.log(event)
+    let url = event.target.dataset.url;
+    let suburl = url.substr(url.indexOf("catid="), url.length);
+    let catid = suburl.substr(6, suburl.indexOf("=") - 3);
+    let id = suburl.substr(suburl.lastIndexOf("=") + 1, suburl.length);
+    wx.navigateTo({
+      url: '/pages/case/case?carid=' + catid + '&id=' + id,
+    })
+  },
 
   btnclick: function () {
     wx.switchTab({    //跳转到tabBar页面，并关闭其他所有tabBar页面

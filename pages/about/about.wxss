@@ -116,7 +116,7 @@
 .team-iamge-1{
   padding: 40rpx 30rpx 0 30rpx;
   width: calc(100% -60rpx);
-  height: 550rpx;
+  height: 600rpx;
 }
 .contract-container{
   width:100%;

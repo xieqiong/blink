@@ -16,9 +16,10 @@
       </view>
     </view>
   </view>
-   <view class="btn-view">
-      <button class='btn' bindtap="btnclick">
-        <text class="btn-inner">VIEW MORE \n 查看更多</text>
-      </button>
-    </view>
+  <view class="btn-view">
+    <button class='btn' bindtap="btnclick">
+      <view class="btn-inner">VIEW MORE </view>
+      <view class="btn-inner-1">查看更多 </view>
+    </button>
+  </view>
 </view>
