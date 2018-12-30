@@ -5,17 +5,54 @@ Page({
    * 页面的初始数据
    */
   data: {
-    url: ''
+    result: {},
+    arrays: []
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let url = "https://www.k-media.cn/index.php?m=content&c=index&a=show&catid="
-    url = url + options.carid + "&id="+ options.id+"&showFlag=1"
+    let url = "https://www.k-media.cn/api.php?op=getcontent&id="+ options.id
+    wx.request({
+      url: url,
+      success: (res) => {
+        let result = res.data;
+        // this.setData({ result: result });
+        let newImgs = []
+        if(result.content.length > 0) {
+          let content = result.content;
+          let imgContets = content.split('<img');
+          for(let i = 0; i < imgContets.length; i++) {
+            if(imgContets[i].indexOf("src") > 0) {
+              let newImg = imgContets[i].substr(imgContets[i].indexOf("src") + 5, imgContets[i].length);
+              newImg = newImg.substr(0, newImg.indexOf('"'))
+              let content = { src: newImg}
+              newImgs.push(content);
+            }
+          }
+          //this.setData({ imgs: newImgs });
+        }
+        result.imgs = newImgs
+        this.setData({ result: result, arrays: newImgs});
+      }
+    })
+  },
+  btnCaseDetail: function (event) {
+    // console.log(event)
+    let url = event.target.dataset.url;
     console.log(url)
-    this.setData({ url: url });
+    let suburl = url.substr(url.indexOf("catid="), url.length);
+    let catid = suburl.substr(6, suburl.indexOf("=") - 3);
+    let id = suburl.substr(suburl.lastIndexOf("=") + 1, suburl.length);
+    wx.navigateTo({
+      url: '/pages/case/case?carid=' + catid + '&id=' + id,
+    })
+  },
+  btnclick: function () {
+    wx.switchTab({    //跳转到tabBar页面，并关闭其他所有tabBar页面
+      url: "/pages/classic/classic"
+    })
   },
   videoErrorCallback: function (e) {
     console.log('视频错误信息:' + e.detail.errMsg);

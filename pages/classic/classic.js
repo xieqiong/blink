@@ -13,6 +13,7 @@ Page({
   btnCaseDetail: function (event) {
     // console.log(event)
     let url = event.target.dataset.url;
+    console.log(url)
     let suburl = url.substr(url.indexOf("catid="), url.length);
     let catid = suburl.substr(6, suburl.indexOf("=") - 3);
     let id = suburl.substr(suburl.lastIndexOf("=") + 1, suburl.length);

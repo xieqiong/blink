@@ -1,3 +1,31 @@
 <!--pages/case/case.wxml-->
-<!-- <video src="http://www.w3school.com.cn//i/movie.mp4" binderror="videoErrorCallback"></video> -->
-<web-view src="{{url}}"></web-view>
+<view class="container">
+  <view class="case-title">{{result.title}}</view>
+  <view class="sub-case-title">SHOWRELL</view>
+  <view class="video-class" wx:if="{{result.V_1.length>0}}">
+    <video class="videoCss" src="{{result.V_1}}" objectFit="cover" show-center-play-btn="true" controls danmu-btn page-gesture="true" enable-progress-gesture="true"></video>
+  </view>
+  <view class="img-class" wx:if="{{result.V_1.length==0}}">
+  <view class="info-img"  wx:for="{{arrays}}" wx:for-index="index" wx:for-item="item">
+    {{info}}
+    <image mode="widthFix" style="width:100%" src="{{item.src}}" />
+   </view>
+  </view>
+  <view class="more-class">更多案例</view>
+  <view class="more-line"></view>
+  <view class="case-container">
+    <view class="content-case" wx:for="{{result.sameData}}" wx:for-item="info" wx:key="id">
+      <view class="content-case-item">
+        <image bindtap="btnCaseDetail" data-url="{{info.url}}" class="content-item-img" src="{{info.bg_images}}" />
+        <view class="content-item-title">{{info.title}}</view>
+        <view class="content-item-title-sub">PROMOTION VIDEO </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-view">
+    <button class='btn' bindtap="btnclick">
+      <view class="btn-inner">BACK HOME </view>
+      <view class="btn-inner-1">返回首页 </view>
+    </button>
+  </view>
+</view>
