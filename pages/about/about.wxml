@@ -42,7 +42,7 @@
     <view class="service-title-line"></view>
     <view class="customer-box">
       <view class="customer-box-item">
-        <image class="customer-box-item-img" src="images/customer-1.png"/>
+        <image widthFix class="customer-box-item-img" src="images/customer-1.png"/>
       </view>
     </view>
   </view>

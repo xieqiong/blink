@@ -19,10 +19,10 @@
     <view class="content-case-item">
       <image bindtap="btnCaseDetail" data-url="{{info.url}}" class="content-item-img" src="{{info.bg_images}}"/>
       <view class="content-left">
-       <view class="content-item-key">KEY VERSION</view>
+       <view class="content-item-key">{{info.title}}</view>
       </view>
       <view class="content-right">
-        <view class="content-item-title">{{info.title}}</view>
+        <view class="content-item-title">KEY VERSION</view>
         <view class="content-item-title-sub">{{info.inputtime}} </view>
       </view>
     </view>

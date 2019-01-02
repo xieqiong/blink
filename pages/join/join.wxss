@@ -27,9 +27,9 @@
   line-height: 80rpx;
   font-size: 30px;
   text-align: center;
-  color: #c0c0c0;
+  color: #808080;
   margin: 80rpx 0 5rpx 0;
-  font-weight: 700;
+  font-weight: 800;
 }
 .join-enlish1{
   line-height: 120rpx;
@@ -41,17 +41,21 @@
 .join-chinese{
   font-size: 19px;
   text-align: center;
-  color: #999;
+  color: #808080;
+  position: absolute;
+  top:73px;
 }
 .join-chinese1{
   font-size: 18px;
   text-align: center;
-  color: #999;
+  color: #808080;
+  font-weight: 700;
 }
 .join-line{
-  width: 70rpx;
+  width: 30rpx;
   height: 5px;
-  border-bottom: 2px solid red;
+  margin-top: 20px;
+  border-bottom: 2px solid #cf0000;
 }
 .join-summary{
   text-align: center;
@@ -59,7 +63,8 @@
   line-height: 25px;
   font-size: 14px;
   padding: 5rpx 40rpx;
-  color: #666;
+  color: #808080;
+  font-weight: 700;
 }
 .index{
   text-align: left;
@@ -68,7 +73,7 @@
   padding: 30rpx 40rpx;
 }
 .index-block-tile{
-  color:#333;
+  color:#b4b4b4;
   font-size: 18px;
 }
 .index-ft {
@@ -153,6 +158,8 @@
 .kind-list-text{
   flex: 1;
   font-size: 14px;
+  color: #808080;
+  font-weight: 700;
 }
 .kind-list-img {
   width: 32rpx;

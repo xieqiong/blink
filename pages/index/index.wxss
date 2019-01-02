@@ -34,9 +34,9 @@
   height: 350rpx;
 }
 .content-item-key{
-  font-size: 20px;
-  font-weight: 700;
-  color: #999;
+  font-size: 17px;
+  font-weight: 600;
+  color: #808080;
   float: left;
   margin-top: 10rpx;
 }
@@ -52,14 +52,14 @@
   text-align: right;
   font-size:12px;
   line-height:40rpx;
-  color: #666;
+  color: #b4b4b4;
   padding-right: 20rpx;
   margin-top:10rpx;
 }
 .content-item-title-sub{
   text-align: right;
   font-size:12px;
-  color: #ccc;
+  color: #b4b4b4;
   padding-right: 20rpx;
 }
 .title-continer{
@@ -68,26 +68,28 @@
 }
 .first-title{
   font-size: 32px;
-  color: #666;
-  font-weight: 700;
+  color: #b4b4b4;
+  font-weight: 900;
 }
 .sub-title{
   font-size: 20px;
-  color: #666;
-  font-weight: 500;
-  margin-top:0;
+  color: #b4b4b4;
+  font-weight: 800;
+  top:44px;
+  left:calc(50% - 20px);
+  position: absolute;
 }
 .sub-line{
   width: 40rpx;
   height: 1px;
-  border-top: 2px solid red;
+  border-top: 2px solid #cf0000;
   display: inline-block;
   position: absolute;
-  margin-top: 20rpx;
+  margin-top: 50rpx;
   margin-left: -20rpx;
 }
 .navigator-hover {
-  color: red;
+  color: #cf0000;
 }
 .sub-nav-container{
   display: flex;
@@ -99,8 +101,8 @@
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  color: #333;
+  color: #808080;
 }
 .navi-active{
-  color: #ED5050;
+  color: #cf0000;
 }

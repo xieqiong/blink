@@ -9,6 +9,7 @@ Page({
     initCases: [],
     casees: [],
     tabActive: '1',
+    section_Up_Height: '200'
   },
   btnCaseDetail: function (event) {
     // console.log(event)
@@ -31,6 +32,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    wx.getSystemInfo({ success: function (res) { 
+      console.log(res); 
+      that.setData({ section_Up_Height: res.windowWidth / 16 * 9 }) 
+      } 
+    })
     wx.request({
       url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
       success: (res)=>{

@@ -11,7 +11,6 @@
   
 }
 .title-box{
-  height: 460rpx;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -57,6 +56,7 @@
   font-size:12px;
   line-height:30rpx;
   color: #666;
+  font-weight: 800;
   padding-right: 20rpx;
 }
 .content-item-title-sub{
@@ -68,6 +68,9 @@
 .title-continer{
   margin: 15rpx 0 10rpx 0;
   text-align: center;
+  position: relative;
+  height: 80px;
+  width: 100%;
 }
 .btn-view{
   margin-top: 40rpx;
@@ -99,16 +102,20 @@
   font-size: 0;
 }
 .first-title{
-  margin-top: 50rpx;
+  top: 50rpx;
   font-size: 18px;
   color: #ccc;
-  font-weight: 600;
+  font-weight: 800;
+  position: absolute;
+  left: calc(50% - 100px);
 }
 .sub-title{
   font-size: 16px;
   color: #666;
-  font-weight: 500;
-  margin-bottom:25rpx;
+  font-weight: 800;
+  top:93rpx;
+  position: absolute;
+  left: calc(50% - 50px);
 }
 .sub-line{
   width: 40rpx;
