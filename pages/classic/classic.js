@@ -8,6 +8,7 @@ Page({
     // dingyi anli
     initCases: [],
     casees: [],
+    planCasees: [],
     tabActive: '1',
     section_Up_Height: '200'
   },
@@ -44,7 +45,14 @@ Page({
         let result = res.data.result;
         this.initCases = result;
         this.setData({ casees: result});
-        // console.log(result)
+      }
+    })
+    wx.request({
+      url: 'https://www.k-media.cn/api.php?op=autoload&catid=11&catty=3&page=1',
+      success: (res) => {
+        let result = res.data.result;
+        this.initCases = result;
+        this.setData({ planCasees: result });
       }
     })
   },

@@ -28,7 +28,7 @@
     <view class="sub-title">最新视觉案例</view>
     </view>
     <view class="case-container">
-      <view class="content-case" wx:for="{{casees}}" wx:for-item="info" wx:key="id">
+      <view class="content-case" wx:for="{{planCasees}}" wx:for-item="info" wx:key="id">
         <view class="content-case-item">
           <image bindtap="btnCaseDetail" data-url="{{info.url}}" class="content-item-img" src="{{info.bg_images}}" />
           <view class="content-item-title">{{info.title}}</view>
