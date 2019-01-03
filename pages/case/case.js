@@ -99,10 +99,30 @@ Page({
 
   },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
 
+  /**
+  
+     * 用户点击右上角分享
+  
+     */
+
+  onShareAppMessage: function (res) {
+    console.log(this.data.result)
+    return {
+      title: this.data.result.title,
+      // path: '这里写你这个页面的路径',
+      imageUrl: this.data.result.bg_images,
+      success: function (shareTickets) {
+        console.info(shareTickets + '成功');
+        // 转发成功
+      },
+      fail: function (res) {
+        console.log(res + '失败');
+        // 转发失败
+      },
+      complete: function (res) {
+        // 不管成功失败都会执行
+      }
+    }
   }
 })
