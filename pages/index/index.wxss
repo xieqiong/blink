@@ -21,7 +21,7 @@
 .content-case-item{
   width: calc(100% - 120rpx);
   display: block;
-  padding: 50rpx 60rpx;
+  padding: 30rpx 60rpx 80rpx;
   overflow: hidden;
 }
 .content-case{
@@ -34,7 +34,7 @@
   height: 350rpx;
 }
 .content-item-key{
-  font-size: 17px;
+  font-size: 20px;
   font-weight: 600;
   color: #808080;
   float: left;
@@ -55,10 +55,11 @@
   color: #b4b4b4;
   padding-right: 20rpx;
   margin-top:10rpx;
+  font-weight: 700;
 }
 .content-item-title-sub{
   text-align: right;
-  font-size:12px;
+  font-size:7px;
   color: #b4b4b4;
   padding-right: 20rpx;
 }
@@ -69,7 +70,7 @@
 .first-title{
   font-size: 32px;
   color: #b4b4b4;
-  font-weight: 900;
+  font-weight: bold;
 }
 .sub-title{
   font-size: 20px;
@@ -85,7 +86,7 @@
   border-top: 2px solid #cf0000;
   display: inline-block;
   position: absolute;
-  margin-top: 50rpx;
+  margin-top: 70rpx;
   margin-left: -20rpx;
 }
 .navigator-hover {
@@ -94,7 +95,7 @@
 .sub-nav-container{
   display: flex;
   width:100%;
-  padding: 0 0 10rpx 0;
+  padding: 20rpx 0 0 0;
 }
 .navi{
   width: 25%;

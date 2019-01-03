@@ -25,11 +25,11 @@
 }
 .join-enlish{
   line-height: 80rpx;
-  font-size: 30px;
   text-align: center;
-  color: #808080;
   margin: 80rpx 0 5rpx 0;
-  font-weight: 800;
+  font-size: 32px;
+  color: #b4b4b4;
+  font-weight: bold;
 }
 .join-enlish1{
   line-height: 120rpx;
@@ -39,11 +39,12 @@
   font-weight: 700;
 }
 .join-chinese{
-  font-size: 19px;
   text-align: center;
-  color: #808080;
   position: absolute;
   top:73px;
+  font-size: 20px;
+  color: #b4b4b4;
+  font-weight: 800;
 }
 .join-chinese1{
   font-size: 18px;
@@ -52,9 +53,9 @@
   font-weight: 700;
 }
 .join-line{
-  width: 30rpx;
+  width: 40rpx;
   height: 5px;
-  margin-top: 20px;
+  margin-top: 27px;
   border-bottom: 2px solid #cf0000;
 }
 .join-summary{

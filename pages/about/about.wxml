@@ -1,7 +1,7 @@
 <!--pages/about/about.wxml-->
 <view class="container">
   <view class="image-header">
-    <image class="image-header-title" src="images/title-head.png"/>
+    <image widhtFix class="image-header-title" src="images/title-head.jpg"/>
   </view>
   <view class="about-description">
   我们经常自问：如果我们自己是一家互联网公司，为什么需要鲲域这样的合作伙伴？
