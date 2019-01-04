@@ -3,18 +3,10 @@
   <view class="image-header">
     <image widhtFix class="image-header-title" src="images/title-head.jpg"/>
   </view>
-  <view class="about-description">
-  我们经常自问：如果我们自己是一家互联网公司，为什么需要鲲域这样的合作伙伴？
-  视觉炸裂？专业服务？强悍执行？牛逼创意？
-  这些回答都不错，但我们希望做到更多。
-  最终，大家被如下愿景所打动——
-让每位客户“彻底省心”，交付品质“超越期待”。
-鲲域的主要成员，全部来自腾讯、网易等知名公司。
-曾长期浸淫第一线的产品研发、运营与市场营销，既深刻理解发行诉求，也广泛洞悉用户痛点。
-公司成立以来，已有幸服务了中国手游TOP50中超过30%的产品，帮助并见证了无数辉煌的数字与苦尽甘来的时刻。
-而真正让我们感动的，是合作伙伴一以贯之的信任，以及用户对好产品发自内心的认可。
-我们是鲲域，致力于成为中国最好的互联网数字创意产品提供商。
-  </view>
+  <text decode = "{{true}}" class="about-description">  &nbsp;&nbsp;&nbsp;&nbsp;我们经常自问：如果我们自己是一家互联网公司，为什么需要鲲域这样的合作伙伴？视觉炸裂？专业服务？强悍执行？牛逼创意？这些回答都不错，但我们希望做到更多。
+&nbsp;&nbsp;&nbsp;&nbsp;鲲域的主要成员，全部来自腾讯、网易等知名公司。曾长期浸淫第一线的产品研发、运营与市场营销，既深刻理解发行诉求，也广泛洞悉用户痛点。公司成立以来，已有幸服务了中国手游TOP50中超过30%的产品，帮助并见证了无数辉煌的数字与苦尽甘来的时刻。
+&nbsp;&nbsp;&nbsp;&nbsp;我们是鲲域，致力于成为中国最好的互联网数字创意产品提供商。
+  </text>
   <view class="service-container">
     <view class="service-title">OUR SERVICE</view>
     <view class="service-title-sub">我们的服务</view>

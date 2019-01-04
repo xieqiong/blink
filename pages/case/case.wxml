@@ -3,7 +3,7 @@
   <view class="case-title">{{result.title}}</view>
   <view class="sub-case-title">SHOWRELL</view>
   <view class="video-class" wx:if="{{result.V_1.length>0}}">
-    <video class="videoCss" src="{{result.V_1}}" objectFit="cover" show-center-play-btn="true" controls danmu-btn page-gesture="true" enable-progress-gesture="true"></video>
+    <video data-id="videoId" class="videoCss" src="{{result.V_1}}" objectFit="fill" show-center-play-btn="true" controls danmu-btn page-gesture="true" enable-progress-gesture="true"></video>
   </view>
   <view class="img-class" wx:if="{{result.V_1.length==0}}">
   <view class="info-img"  wx:for="{{arrays}}" wx:for-index="index" wx:for-item="item">

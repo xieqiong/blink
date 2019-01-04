@@ -39,13 +39,16 @@ Page({
     })
   },
   btnCaseDetail: function (event) {
-    // console.log(event)
+    console.log(event)
+    // this.isPlaying  = false
+    //let videoContextPrev = wx.createVideoContext("videoId")
+    this.videoContext.stop();
     let url = event.target.dataset.url;
-    console.log(url)
+    //console.log(url)
     let suburl = url.substr(url.indexOf("catid="), url.length);
     let catid = suburl.substr(6, suburl.indexOf("=") - 3);
     let id = suburl.substr(suburl.lastIndexOf("=") + 1, suburl.length);
-    wx.navigateTo({
+    wx.redirectTo({
       url: '/pages/case/case?carid=' + catid + '&id=' + id,
     })
   },
@@ -61,7 +64,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    this.videoContext = wx.createVideoContext('myVideo')
   },
 
   /**
