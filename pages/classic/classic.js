@@ -25,6 +25,15 @@ Page({
   },
 
   btnclick: function () {
+    const app = getApp();
+    app.globalData.id = '1'
+    wx.switchTab({    //跳转到tabBar页面，并关闭其他所有tabBar页面
+      url: "/pages/index/index"
+    })
+  },
+  btnclickPlan: function () {
+    const app = getApp();
+    app.globalData.id  = '2'
     wx.switchTab({    //跳转到tabBar页面，并关闭其他所有tabBar页面
       url: "/pages/index/index"
     })
@@ -35,7 +44,7 @@ Page({
   onLoad: function (options) {
     var that = this;
     wx.getSystemInfo({ success: function (res) { 
-      console.log(res); 
+      //console.log(res); 
       that.setData({ section_Up_Height: res.windowWidth / 16 * 9 }) 
       } 
     })

@@ -68,15 +68,20 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
-      success: (res) => {
-        let result = res.data.result;
-        this.initCases = result;
-        this.setData({ casees: result });
-        // console.log(result)
-      }
-    })
+    const app = getApp();
+    // console.log(app.globalData.id)
+    // if (app.globalData.id == '2') {
+    //   this.btnPlaneclick()
+    // } else {
+    //   wx.request({
+    //     url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
+    //     success: (res) => {
+    //       let result = res.data.result;
+    //       this.initCases = result;
+    //       this.setData({ casees: result });
+    //     }
+    //   })
+    // }
   },
 
   /**
@@ -90,7 +95,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const app = getApp();
+    if (app.globalData.id == '2') {
+      this.btnPlaneclick()
+    } else {
+      wx.request({
+        url: 'https://www.k-media.cn/api.php?op=autoload&catid=10&catty=3&page=1',
+        success: (res) => {
+          let result = res.data.result;
+          this.initCases = result;
+          //this.setData({ casees: result });
+          this.setData({ casees: result, tabActive: '1' });
+        }
+      })
+    }
+    app.globalData.id = '1'
   },
 
   /**

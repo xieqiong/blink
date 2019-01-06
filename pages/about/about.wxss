@@ -67,7 +67,7 @@
 .service-title-line{
   width: 40rpx;
   height: 20rpx;
-  margin-top: 27px;
+  margin-top: 25px;
   border-bottom: 2px solid red;
 }
 .about-item{

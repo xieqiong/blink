@@ -11,7 +11,7 @@
     <view class="service-title">OUR SERVICE</view>
     <view class="service-title-sub">我们的服务</view>
     <view class="service-title-line"></view>
-    <view class="service-detail">产品宣传视频,LOGO演绎动画,发布会视频,海报,官网,宣传物料,H5设计,UI设计,品牌包装</view>
+    <!-- <view class="service-detail">产品宣传视频,LOGO演绎动画,发布会视频,海报,官网,宣传物料,H5设计,UI设计,品牌包装</view> -->
     <view class="about-item">
      <image class="about-icon" src="images/about-icon-1.jpg"/>
      <view class="about-icon-title">VIDEO DESIGN</view>

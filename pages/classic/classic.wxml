@@ -37,7 +37,7 @@
       </view>
     </view>
     <view class="btn-view">
-      <button class='btn' bindtap="btnclick">
+      <button style="background:#f1f2f3" class='btn' bindtap="btnclickPlan">
         <view class="btn-inner">VIEW MORE </view>
         <view class="btn-inner-1">查看更多 </view>
       </button>

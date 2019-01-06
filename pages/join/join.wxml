@@ -18,7 +18,7 @@
           <view class="kind-list-item">
             <view id="{{item.id}}" class="kind-list-item-hd {{item.open ? 'kind-list-item-hd-show' : ''}}" bindtap="kindToggle">
               <view class="kind-list-text">{{item.title}}</view>
-              <image class="kind-list-img" src="images/plus.png"></image>
+              <image class="kind-list-img" src="{{item.open ? 'images/minus.png':'images/plus.png'}}"></image>
             </view>
             <view class="kind-list-item-bd {{item.open ? 'kind-list-item-bd-show' : ''}}">
               <view class="navigator-box {{item.open ? 'navigator-box-show' : ''}}">
