@@ -160,20 +160,7 @@ Page({
       }
     })
     wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoloadother&catid=15&catty=3&page=1',
-      success: (res) => {
-        let result = res.data.result;
-        // this.initCases = result;
-        for (let i = 0; i < result.length; i++) {
-          result[i].open = false
-          result[i].content = result[i].data[0].content
-        }
-        this.setData({ publicList: result });
-        //console.log(result)
-      }
-    })
-    wx.request({
-      url: 'https://www.k-media.cn/api.php?op=autoloadother&catid=15&catty=3&page=1',
+      url: 'https://www.k-media.cn/api.php?op=autoloadother&catid=21&catty=3&page=1',
       success: (res) => {
         let result = res.data.result;
         // this.initCases = result;
