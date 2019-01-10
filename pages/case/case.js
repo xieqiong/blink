@@ -6,7 +6,8 @@ Page({
    */
   data: {
     result: {},
-    arrays: []
+    arrays: [],
+    title: ''
   },
 
   /**
@@ -14,6 +15,7 @@ Page({
    */
   onLoad: function (options) {
     let url = "https://www.k-media.cn/api.php?op=getcontent&id="+ options.id
+    this.setData({ title: options.title });
     wx.request({
       url: url,
       success: (res) => {
@@ -39,17 +41,18 @@ Page({
     })
   },
   btnCaseDetail: function (event) {
-    console.log(event)
+   // console.log(event)
     // this.isPlaying  = false
     //let videoContextPrev = wx.createVideoContext("videoId")
     this.videoContext.stop();
     let url = event.target.dataset.url;
+    let title = event.target.dataset.title;
     //console.log(url)
     let suburl = url.substr(url.indexOf("catid="), url.length);
     let catid = suburl.substr(6, suburl.indexOf("=") - 3);
     let id = suburl.substr(suburl.lastIndexOf("=") + 1, suburl.length);
     wx.redirectTo({
-      url: '/pages/case/case?carid=' + catid + '&id=' + id,
+      url: '/pages/case/case?title=' + title + '&id=' + id,
     })
   },
   btnclick: function () {
