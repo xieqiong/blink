@@ -57,7 +57,7 @@
   padding-right: 20rpx;
   margin-top:10rpx;
   font-weight: 700;
-  width: 100px; 
+  min-width: 100px; 
 }
 .content-item-title-sub{
   text-align: right;
