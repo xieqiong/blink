@@ -71,7 +71,7 @@
       <view class="contract-right">
         <view>加入我们</view>
         <view class="contract-line-1"></view>
-        <view class="contract-content-1">yangjie@k-media.cn</view>
+        <view class="contract-content-1">hr@k-media.cn</view>
         <view class="message-cont" bindtap="btnclick">查看招聘信息</view>
       </view>
     </view>
